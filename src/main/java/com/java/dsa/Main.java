@@ -1,5 +1,6 @@
 package com.java.dsa;
 
+import com.java.dsa.leetCode.CanPlaceFlowers;
 import com.java.dsa.leetCode.GreatestCommonDivisorString;
 import com.java.dsa.leetCode.KidsWithGreaterNumberOfCandies;
 import com.java.dsa.leetCode.MergeAlternately;
@@ -17,6 +18,8 @@ public class Main {
         main.testGreatestCommonDivisorString();
 
         main.testKidsWithGreaterNumberOfCandies();
+
+        main.testCanPlaceFlowers();
 
     }
 
@@ -62,5 +65,17 @@ public class Main {
         System.out.println("******************** Testing KidsWithGreaterNumberOfCandies Problem Completed");
     }
 
+    void testCanPlaceFlowers()
+    {
+        System.out.println("******************** Testing CanPlaceFlowers Problem");
+        int [] flowerBed1={1,0,0,0,1};
+        int [] flowerBed2={1,0,0,0,1};
+        int [] flowerBed3={0};
+        CanPlaceFlowers canPlaceFlowers=new CanPlaceFlowers();
+        System.out.println(canPlaceFlowers.canPlaceFlowers(flowerBed1,1));
+        System.out.println(canPlaceFlowers.canPlaceFlowers(flowerBed2,2));
+        System.out.println(canPlaceFlowers.canPlaceFlowers(flowerBed3,1));
+        System.out.println("******************** Testing CanPlaceFlowers Problem Completed");
+    }
 
 }
