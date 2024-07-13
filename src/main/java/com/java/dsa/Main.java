@@ -1,9 +1,6 @@
 package com.java.dsa;
 
-import com.java.dsa.leetCode.CanPlaceFlowers;
-import com.java.dsa.leetCode.GreatestCommonDivisorString;
-import com.java.dsa.leetCode.KidsWithGreaterNumberOfCandies;
-import com.java.dsa.leetCode.MergeAlternately;
+import com.java.dsa.leetCode.*;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -20,6 +17,8 @@ public class Main {
         main.testKidsWithGreaterNumberOfCandies();
 
         main.testCanPlaceFlowers();
+
+        main.testReverseVowelString();
 
     }
 
@@ -76,6 +75,21 @@ public class Main {
         System.out.println(canPlaceFlowers.canPlaceFlowers(flowerBed2,2));
         System.out.println(canPlaceFlowers.canPlaceFlowers(flowerBed3,1));
         System.out.println("******************** Testing CanPlaceFlowers Problem Completed");
+        String a="Rahat";
+        char [] vowels={'a','e','i','o','u'};
+        char [] val={'x','a'};
+        System.out.println(String.valueOf(vowels).toLowerCase().contains(String.valueOf(val[0]).toLowerCase()));
+        System.out.println(a.substring(0,5));
+    }
+
+    void testReverseVowelString()
+    {
+        System.out.println("******************** Testing ReverseVowelString Problem");
+        ReverseVowelString reverseVowelString=new ReverseVowelString();
+        System.out.println("Reverse vowel in string-hello is "+reverseVowelString.reverseVowels("hello"));
+        System.out.println("Reverse vowel in string-xyza is "+reverseVowelString.reverseVowels("xyza"));
+        System.out.println("Reverse vowel in string-., is "+reverseVowelString.reverseVowels(".,"));
+        System.out.println("******************** Testing ReverseVowelString Problem Completed");
     }
 
 }
