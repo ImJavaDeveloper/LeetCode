@@ -2,6 +2,9 @@ package com.java.dsa;
 
 import com.java.dsa.leetCode.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -19,6 +22,8 @@ public class Main {
         main.testCanPlaceFlowers();
 
         main.testReverseVowelString();
+
+        main.testReverseWordInString();
 
     }
 
@@ -75,11 +80,6 @@ public class Main {
         System.out.println(canPlaceFlowers.canPlaceFlowers(flowerBed2,2));
         System.out.println(canPlaceFlowers.canPlaceFlowers(flowerBed3,1));
         System.out.println("******************** Testing CanPlaceFlowers Problem Completed");
-        String a="Rahat";
-        char [] vowels={'a','e','i','o','u'};
-        char [] val={'x','a'};
-        System.out.println(String.valueOf(vowels).toLowerCase().contains(String.valueOf(val[0]).toLowerCase()));
-        System.out.println(a.substring(0,5));
     }
 
     void testReverseVowelString()
@@ -90,6 +90,16 @@ public class Main {
         System.out.println("Reverse vowel in string-xyza is "+reverseVowelString.reverseVowels("xyza"));
         System.out.println("Reverse vowel in string-., is "+reverseVowelString.reverseVowels(".,"));
         System.out.println("******************** Testing ReverseVowelString Problem Completed");
+    }
+
+    void testReverseWordInString()
+    {
+       String str="the sky is blue";
+        System.out.println("******************** Testing ReverseWordInString Problem");
+        ReverseWordsInString reverseWordsInString=new ReverseWordsInString();
+        System.out.println(" string-"+str);
+        System.out.println("Reverse Words in string-"+reverseWordsInString.reverseWords(str));
+        System.out.println("******************** Testing ReverseWordInString Problem Completed");
     }
 
 }
